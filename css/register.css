@@ -1,0 +1,74 @@
+#hero-content-container {
+    flex-direction: column;
+    padding-top: 15em;
+}
+form {
+    display: flex;
+    flex-flow: column;
+}
+#register-form-wrapper{
+    margin: 2em 0;
+    padding: 4em;
+    background-color: rgb(0, 0, 70);
+    border-radius: 1em;
+}
+
+form label {
+    margin: 1em 0;
+}
+
+form label span{
+    color:red
+}
+
+input {
+    width: calc(10em + 25vw);
+    border-radius: 4px;
+    margin-top: 2em;
+    padding: .5em .8em;
+    font-weight: 700;
+    background: whitesmoke;
+    color: #868ca0;
+    border: 0;
+    font-family: inherit;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    outline: none;
+    transition: box-shadow ease-in-out .2s;
+    font-size: 1.1em;
+}
+
+input:focus{
+    box-shadow: 0 4px 8px 0 rgba(70, 50, 251, 0.144), 0 6px 20px 0 rgba(50, 70, 251, 0.274);
+}
+
+input.atttentionBorder{
+    border: 4px red solid;
+}
+
+form input, textarea {
+    margin: 0 0 1em 0 !important;
+}
+
+form .button{
+    margin: 2em 0 0;
+    width: 49%;
+}
+
+#form-button-container{
+    justify-content: space-between;
+}
+
+form .button:last-child{
+    background: #707070;
+}
+
+/*karena berbeda sendiri, untuk show/hide pass. float right karena agar element ke kanan*/
+label[for="password"] span:last-child {
+    float: right;
+    color: unset;
+    cursor: pointer;
+}
+
+label[for="password"] span:last-child:hover{
+    color: #868ca0;
+}

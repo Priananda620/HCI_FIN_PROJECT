@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="asset/icoo.ico" type="image/x-icon">
+    <title>Doto 2 | Game Mechanics</title>
+    <!----fonts---->
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet"> 
+    
+    
+    <!--- font awesome css hanya untuk icon social media-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/heroes.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/gameMechanics.css'>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    
+</head>
+<body>
+    <div id="full-page-container">
+        <div class="nav nav-hide" id="nav">
+            <div class="nav__content">
+                <ul class="nav__list">
+                    <a href="index.html"><li class="nav__list-item">home</li></a> 
+                    <a href="heroes.html"><li class="nav__list-item">heroes</li></a>
+                    <a href="game_mechanics.html"><li class="nav__list-item">game mechanics</li></a>
+                    <a href="merchandise.html"><li class="nav__list-item">merchandise</li></a>
+                    <a href="register.html"><li class="nav__list-item">register</li></a>
+                </ul>
+            </div>
+        </div>
+        <header class="element-flex">
+            <div id="logo-wrap-header-left">
+                <a href="index.html">
+                    <!-- <h1>DOTO 2</h1> -->
+                    <div id="logo-source"></div>
+                </a>
+            </div>
+            <div id="nav-wrap-header-right">
+                <nav>
+                    <ul class="element-flex">
+                        <li><a class="hover-nav-item" href="index.html">home</a></li>
+                        <li><a class="hover-nav-item" href="heroes.html">heroes</a></li>
+                        <li><a class="hover-nav-item" href="game_mechanics.html">game mechanics</a></li>
+                        <li><a class="hover-nav-item" href="merchandise.html">merchandise</a></li>
+                        <li><a class="button" href="register.html">register</a></li>
+                    </ul>
+                    <div id="nav-toggle">
+                        <div class="menu-hamburger">
+                            <span class="menu-hamburger__line menu-hamburger__line-left"></span>
+                            <span class="menu-hamburger__line"></span>
+                            <span class="menu-hamburger__line menu-hamburger__line-right"></span>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        
+        <section id="hero-slider">
+            
+            <div id="hero-slider-cover-bg-wrapper">
+                <video muted="" autoplay="" preload="auto" loop="" playsinline="">
+                    <source src="asset/videos/hero_video.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div id="hero-content-container" class="element-flex">
+                <h1 class="header-text center">
+                    Game Mechanics
+                    <div class="separator-bar"></div>
+                </h1>
+                <div id="heroes-grid-container">
+                    <!--- image source dan data heroes diambil dari valve api dan DOTO cdn, heroGenerate.js, css heroes.css-->
+                    
+                    <!--- contoh structure-->
+                    <!-- <div class="heroes-grid-items"><img src="http://cdn.DOTO2.com/apps/DOTO2/images/heroes/abaddon_vert.jpg" ><div class="heroes-text-content element-flex"><h1>name</h1><h1>primaryAttribute</h1><h1>allegiance</h1></div></div> -->
+                    
+                    
+                    <!--- img -->
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="content-block element-flex">
+                <h2 class="header-text">Welcome to Doto 2!<div class="separator-bar"></div></h2>
+                <p><span>Doto 2</span> is a massively multiplayer online game featuring combat heroes from magical tacticians to fierce brutes and cunning rogues. Join players from all over the world, throw yourself into epic battles, and fight for victory!
+                </p>
+                <p>If you're new to the Doto 2, below is our Newcomer's Guide
+                </p>
+            </div>
+            <div class="content-block element-flex guide-header">
+                <div>
+                    <h2>Geting Started</h2>
+                    <p>Explore the Menu and Battle Screen interfaces to get all the essential information you need during the battle.</p>
+                </div>
+            </div>
+            <div class="content-block element-flex">
+                
+                <h2>In This Section<div class="separator-bar"></div></h2>
+                <p>When you first launch the game, you're prompted to complete Bootcamp. It's a training course designed to help you learn game basics in a real battle. After completing it, you get a nice reward of credits, in-game gold, and more bonuses to bolster your progress as you advance in DOTO 2.</p>
+                <div class="element-flex guide-inline">
+                    <p>Once you finish your Bootcamp training, you'll be introduced to your Main Menu. Get to know this screen—you'll be spending a lot of time here. This is where you view all your heroes, research heroes, train your heroes, chat with other players and, of course, start your first battle.</p>
+                    <img src="asset/images/game-mechanics-bootcampTraining.jpg">
+                </div>
+                <div class="element-flex guide-inline row-reverse">
+                    <p>After clicking Battle!, you see the pre-battle loading screen with complete rosters for both teams and the objective of the battle. Keep an eye out for the useful tips in the center of the screen. When loading is complete, you see the Battle Screen, which provides key information while you are in battle.</p>
+                    <img src="asset/images/game-mechanics-battleScreen.png">
+                </div>
+                <div class="element-flex guide-inline">
+                    <p>The DOTO 2 map is divided into two sides, Radiant and Dire. Radiant is on the left, and it’s a verdant, idyllic paradise. Over the river that runs diagonally from top left to bottom right, you’ll find the Dire lands on the right side of the map, all covered in bugs and stuff.</p>
+                    <img src="asset/images/game-mechanics-battleUI.jpg">
+                </div>
+                
+            </div>
+            <div class="content-block element-flex guide-header">
+                <div>
+                    <h2>Basic Mechanics</h2>
+                    <p>DOTO 2 can be an extremely daunting game for new people to get into. They see an enormous hero pool, hundreds of items and hear about a toxic community and are immediately put off. </p>
+                </div>
+            </div>
+            <div class="content-block element-flex">
+                <h2>In This Section<div class="separator-bar"></div></h2>
+                <p>Mechanics are the inner workings of DOTO 2. The following is a list of mechanics topics. Click on each topic to view how they are calculated, where they originate, as well as their complex interactions with other mechanics elements. These properties are used by units in general, including heroes, creeps, and summons. Heroes possess a number of unique mechanics that other units don't. </p>
+                <div class="element-flex guide-inline">
+                    <p>Skills possessed by units, to be used on the battlefield. All heroes have at least three basic abilities and one ultimate ability. Hero abilities are acquired upon leveling up with experience. Most abilities need to be activated, while others are passive or augment a hero's basic attacks. Active abilities have a cooldown period between uses. </p>
+                    <img src="asset/images/game-mechanics-abilities.jpg">
+                </div>
+                <div class="element-flex guide-inline row-reverse">
+                    <p>Heroes are the essential element of DOTO 2, as the course of the match is dependent on their intervention. During a match, two opposing teams select five out of 121 heroes that accumulate Experience Experience and Gold Gold to grow stronger and gain new abilities in order to destroy the opponent's Ancient. Most heroes have a distinct role that defines how they affect the battlefield, though many heroes can perform multiple roles. A hero's appearance can be modified with equipment. </p>
+                    <img src="asset/images/game-mechanics-heroesUI.jpg">
+                </div>
+                <div class="element-flex guide-inline">
+                    <p>Every hero has a primary attribute, which controls their attack damage. Every point in their primary attribute adds 1 point of damage to their attacks. A hero's primary attribute heavily impacts and commonly even defines the hero's role and how they are played. For example, Intelligence attribute symbol.png intelligence heroes are typically more dependent on abilities. A hero's primary attribute typically grows faster than the other two attributes. </p>
+                    <img src="asset/images/attribute-art.jpg">
+                </div>
+            </div>
+        </section>
+        
+        <footer class="element-flex">
+            <h1 class="header-text">DOTO 2 on social networks<div class="separator-bar"></div></h1>
+            <h2>Subscribe to keep track of the latest news</h2>
+            <div class="element-flex">
+
+                <!--- font awesome css hanya untuk icon social media-->
+                <div><i class="fab fa-facebook-square"></i><h2>Join Us on Facebook</h2></div>
+                <div><i class="fab fa-twitter-square"></i><h2>Join Us on Twitter</h2></div>
+                <div><i class="fab fa-instagram-square"></i><h2>Join Us on Instagram</h2></div>
+                <div><i class="fab fa-discord"></i></i><h2>Join Us on Discord</h2></div>
+            </div>
+            <div class="separator-bar" style="width: 100%;"></div>
+            <p>Doto and the Doto logo are trademarks and/or registered trademarks of Doto Corporation. 2021 Doto Corporation, all rights reserved.</p>
+        </footer>
+    </div>
+    <script>
+
+    $(document).ready(function(){
+        
+    });
+    </script>
+
+    <script src="js/nav-overlay.js"></script>
+</body>
+</html>

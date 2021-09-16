@@ -1,0 +1,142 @@
+#slider-container{
+    width: 100%;
+    height: 100%;
+}
+
+#hero-slider{
+    background: none !important;
+}
+
+section#hero-slider img{
+    position: unset;
+    width: 100% !important; 
+}
+
+
+#hero-left-content .header-text{
+    transition: opacity .3s ease;
+}
+
+.hero-text-inactive{
+    animation: hidetext 2.5s ease infinite;
+}
+
+section#home-main-content::before{
+    opacity: 0.2;
+}
+
+section#hero-slider #hero-slider-cover-bg-wrapper{
+    width: 1519px;
+    height: 854px;
+}
+
+#logo-wrap-header-left a{
+    font-weight: 700;
+    font-family: "Audiowide", cursive;
+    font-size: .9vw;
+    letter-spacing: .6vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: whitesmoke;
+}
+
+#hero-left-contents {
+    padding: 40vh 5vw 25vh 5vw;
+}
+
+#hero-left-contents h1{
+    font-style: unset;
+}
+
+#merch-heroText-scroll{
+    overflow: hidden;
+    height: 1.1em;
+}
+
+#merch-heroText-scroll ul{
+    animation-name: merch-hero-text;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    transition: transform cubic-bezier(.61,.45,.18,.9) 2.5s;
+}
+
+#home-main-content .content-block{
+    padding: 5vh 0 10vh 0;
+}
+
+#home-main-content .content-block:nth-of-type(1){
+    padding: 15vh 0 10vh 0;
+}
+
+#home-main-content .content-block > *{
+    padding: 1em 3vw !important;
+}
+
+.items-scrollable{
+    flex-wrap: unset !important;
+    justify-content: unset !important;
+    overflow-x: scroll;
+}
+
+.merch-inline-grid{
+    display: inline-flex;
+    background-color: rgba(58, 0, 112, 0.589);
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.merch-inline-items{
+    margin: .5em;
+    filter: grayscale();
+    transition: filter .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.merch-inline-items img{
+    background-color: blueviolet;
+    width: 315px;
+    height: 315px;
+    margin-bottom: .5em;
+}
+
+.merch-inline-items p{
+    padding: 0 .5em 0 .5em;
+}
+
+.merch-inline-items:hover{
+    filter: none;
+}
+
+.merch-inline-items:hover p:nth-of-type(1){
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 800px) {
+    #hero-left-contents{
+        padding: 35vh 5vw 20vh 5vw !important;
+    }
+}
+/* untuk scrolling text di depan slider */
+@keyframes merch-hero-text {
+    0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+    16.66%, 29.32% {transform:translate3d(0,-26%,0);}
+    33.32%,45.98% {transform:translate3d(0,-51%,0);}
+    49.98%,62.64% {transform:translate3d(0,-76%,0);}
+    66.64%,79.3% {transform:translate3d(0,-51%,0);}
+    83.3%,95.96% {transform:translate3d(0,-26%,0);}
+}
+/* 
+@keyframes hidetext {
+    0%   {opacity:1}
+    25%  {opacity:0}
+    50%  {opacity:0}
+    75%  {opacity:0}
+    100% {opacity:0}
+  } */

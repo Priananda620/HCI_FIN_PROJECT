@@ -1,0 +1,102 @@
+#hero-content-container{
+    flex-direction: column;
+    padding-top: 15em;
+}
+
+header{
+    background-color: #5c26ffe5 !important; 
+    mix-blend-mode: normal !important;
+}
+
+/**** tidak menggunakan display grid, dan sudah respnsive tidak menggunakan @media screen ***/
+#heroes-grid-container{
+    /* display: grid; */
+    column-count: 5;
+    column-width: 200px;
+    column-gap: 20px;
+    width: 100%;
+    max-width: 1600px;
+    margin: auto;
+    padding: 5em 6vw;
+}
+
+.header-text{
+    padding: 0 2em;
+}
+
+#heroes-grid-container a{
+    color: white;
+}
+
+section#hero-slider img{
+    position: unset !important;
+    width: 100%;
+}
+
+#hero-content-container{
+    background: rgba(0, 0, 0, 0) linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.733) 75%, rgb(0, 0, 0) 100%) repeat scroll 0% 0%;background: rgba(0, 0, 0, 0) linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.733) 75%, rgb(0, 0, 0) 100%) repeat scroll 0% 0%;
+}
+
+.heroes-grid-items{
+    margin: 0 auto 10px;
+    width: 100%;
+    transition: transform .4s ease, box-shadow .4s ease;
+    border: 3px solid blueviolet;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/*** untuk shadow di dalam card heroes, agar tulisan lebih terlihat, pada saat di hover opacity baru akan jadi 1***/
+.heroes-grid-items:before{
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0) linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.733) 75%, rgb(0, 0, 0) 100%) repeat scroll 0% 0%;
+    opacity: 0;
+    transition: opacity .2s ease;
+}
+
+/***** absolute, karena agar bisa di depan element tag img ****/
+.heroes-grid-items .heroes-text-content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 170%);
+    opacity: 0;
+    width: 100%;
+    flex-flow: column;
+    font-size: .7em;
+    transition: transform .2s ease, opacity .2s ease;
+}
+
+
+/***** agar nama heroes lebih besar ****/
+.heroes-text-content h1:nth-of-type(1){
+    text-transform: uppercase;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+
+
+/***** untuk heroes items hover ****/
+.heroes-grid-items:hover{
+    /** relative agar bisa z index, pada saat di hover -> scale(1.25), agar di depan card yang lain ***/
+    position: relative;
+    z-index: 2;
+    transform: scale(1.25);
+    box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.2), 0 10px 30px 0 rgba(0, 0, 0, 0.19);
+}
+
+.heroes-grid-items:hover:before{
+    opacity: 1;
+}
+
+.heroes-grid-items:hover .heroes-text-content{
+    /*** translate(-50%, -50%) dan top, left: 50% agar ditengah, karena position absolute. sebelumnya translate(-50%, 170%) untuk nantinya di gerakkan ke atas pada saat di hover ini ****/
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}

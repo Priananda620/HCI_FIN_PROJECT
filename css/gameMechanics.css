@@ -1,0 +1,40 @@
+h2{
+    font-size: 2.2em !important;
+}
+p{
+    font-size: 1.2em !important;
+}
+.content-block{
+    background: #000;
+}
+
+.content-block.guide-header{
+    background: url(../asset/images/home-content-bg-1.png) !important;
+}
+
+.content-block{
+    align-items: start;
+    padding: 3vh 5vw;
+}
+
+.content-block > *{
+    padding: 1em 0 .5em !important;
+    /* width: unset !important; */
+    text-align: unset !important; 
+}
+
+.guide-inline.row-reverse{
+    flex-direction: row-reverse;
+}
+
+.guide-inline p{
+    padding: 2em 2vw !important;
+}
+
+/* 
+#guide-box{
+    margin-top: 5px;
+    display: inline-flex;
+    width: 100%;
+    flex-wrap: wrap;
+} */
